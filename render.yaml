@@ -1,0 +1,15 @@
+services:
+  - type: cron
+    name: resumen-noticias-diario
+    runtime: python
+    repo: https://github.com/tuusuario/tu-repo-noticias.git
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    schedule: "30 21 * * *"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ZAPIER_WEBHOOK
+        sync: false
