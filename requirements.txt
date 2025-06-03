@@ -1,0 +1,20 @@
+# Embeddings y similitud
+sentence-transformers
+faiss-cpu
+
+# Scraping
+requests
+beautifulsoup4
+newspaper3k
+feedparser
+
+# Utilidades
+pandas
+numpy
+python-dotenv
+
+# API OpenAI
+openai
+
+# Zapier Webhook
+httpx
